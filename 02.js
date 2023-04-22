@@ -12,6 +12,28 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+
+  // se puede usar reduce me imagino...
+
+
+  var sml= strings.sort(function(a,b){
+    return b.length - a.length;
+ });
+ 
+ return sml[0];
+ 
+// var sml=strings[0];
+
+// for (let i=0; i<strings.length; i++){
+//   if (sml.length <= strings[i].length){
+//     sml=strings[i];
+//   }
+// }
+// return sml;
+
+
+
+
 }
 
 // No modifiques nada debajo de esta linea //

@@ -12,7 +12,29 @@ function soloNumeros(array) {
 
   // Tu código aca:
 
+
+
+//   var arreglo = array.filter(function(ele){
+//     return typeof(ele) == 'number';
+//   });
+//   return arreglo;
+// }
+
+//NO OLVIDAR RETURN!!!!!!
+
+
+  var arreglo=[];
+
+  for (let i=0; i<array.length; i++){
+    if (typeof(array[i])=== 'number'){
+      arreglo.push(array[i]);
+    }
+  }
+return arreglo;
 }
+// porque array[i] === number no funca?
+//
+//
 
 // No modifiques nada debajo de esta linea //
 
